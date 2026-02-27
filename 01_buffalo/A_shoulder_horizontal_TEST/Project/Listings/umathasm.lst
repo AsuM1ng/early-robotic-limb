@@ -1,0 +1,120 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         
+    2 00000000         ;***************************** º¯Êý½Ó¿ÚÉùÃ÷ ************
+                       *******************
+    3 00000000                 EXPORT           UM_IQ15MulQ15 ;int32_t  UM_IQ15
+                                                            MulQ15(int32_t a, i
+                                                            nt32_t b)
+    4 00000000                 EXPORT           UM_IQ15MulQ7
+    5 00000000         
+    6 00000000         ;***************************** ´úÂë¶ÎÉùÃ÷ **************
+                       *****************
+    7 00000000                 AREA             |.text|,    CODE,   READONLY,  
+ ALIGN=3
+    8 00000000                 THUMB
+    9 00000000                 REQUIRE8
+   10 00000000                 PRESERVE8
+   11 00000000         ;*****************************  ************************
+                       *******
+   12 00000000         
+   13 00000000         
+   14 00000000         
+   15 00000000         ;***************************** ´úÂë*********************
+                       **********
+   16 00000000         
+   17 00000000         
+   18 00000000         ;*******************************************************
+                       *****
+   19 00000000         ;   º¯ÊýÃû :   UM_IQ15MulQ15
+   20 00000000         ;   ×÷ÓÃ   :   Á½¸öQ15¸ñÊ½µÄ32Î»ÓÐ·ûºÅÊýÏà³Ë·¨£¬½á¹ûÒ²ÊÇ
+                       Q15¸ñÊ½
+   21 00000000         ;   ÊäÈë   :   R0  R1
+   22 00000000         ;   Êä³ö   :   R0
+   23 00000000         ;   Ê±¼ä   :   2016,6-1
+   24 00000000         ;   µ÷ÓÃ   :   Íâ²¿µ÷ÓÃ
+   25 00000000         ;   ËµÃ÷   £º  15Î»µÄÐ¡ÊýºÍ15Î»µÄÐ¡ÊýÏà³ËÎª30Î»µÄÐ¡Êý£¬1
+                       7Î»µÄÕûÊýºÍ
+   26 00000000         ;              17Î»µÄÕûÊýÏà³ËÎª34Î»µÄÕûÊý£¬ÓÉÓÚQ15ÕûÊý×î
+                       ´ó17Î»£¬Òò´Ë
+   27 00000000         ;              ÕûÊý²¿·Ö³¬¹ý17Î»µÄ¾Í³¬¹ýQ15×î´ó±íÊ¾·¶Î§£¬
+                       ±¨´í¡£Õý³£Çé¿ö
+   28 00000000         ;              ÏÂ£¬ÕûÊý²¿·Ö²»»á³¬¹ý17Î»£¬Òò´Ë¸ß17Î»Îª0£¬
+                       ¿ÉÒÔÉáÆú¡£
+   29 00000000         ;*******************************************************
+                       *****
+   30 00000000         UM_IQ15MulQ15
+   31 00000000 FB80 1001       SMULL            R1 , R0 , R0 , R1 ;SMULL{<cond>
+                                                            }{S} <RdLo>,<RdHi>,
+                                                            <Rm>,<Rn>
+   32 00000004 EA4F 4040       LSL              R0 , #17    ;¸ß17Î»¾ùÎª0
+   33 00000008 EA4F 31D1       LSR              R1 , #15    ;µÍ32Î»¼Ä´æÆ÷µÄ0~29
+                                                            Î»±íÊ¾¾«¶È(Ð¡Êý)£¬Ó
+                                                            ÉÓÚÏëÒª³Ë·¨µÄ½á¹ûÒ²
+                                                            ÊÇQ15£¬ÕâÀï½«µÍ32Î»
+                                                            ÓÒÒÆ15Î»£¬½«Q30»¯Îª
+                                                            Q15.
+   34 0000000C 4408            ADD              R0 , R1     ;
+   35 0000000E 4770            BX               LR          ;·µ»ØR0¼´ÎªQ15,Èç¹û
+                                                            Öµ³¬¹ýÁË65536.32768
+                                                            £¬Ôò³ö´í
+   36 00000010         UM_IQ15MulQ7
+
+
+
+ARM Macro Assembler    Page 2 
+
+
+   37 00000010 FB80 1001       SMULL            R1 , R0 , R0 , R1 ;
+   38 00000014 EA4F 6040       LSL              R0 , #25    ;¸ß32Î»ÆõºÏÒÆÎ»ºóµÄ
+                                                            µÍ32Î»£¬ËðÊ§²¿·Ö¾«¶
+                                                            È£¬×óÒÆ25Î»
+   39 00000018 EA4F 11D1       LSR              R1 , #7     ;µÍ32Î»ÓÒÒÆ7Î»»¯ÎªQ
+                                                            15¾«¶È
+   40 0000001C 4408            ADD              R0 , R1
+   41 0000001E 4770            BX               LR          ;·µ»ØR0¼´ÎªQ15,Èç¹û
+                                                            Öµ³¬¹ýÁË65536.32768
+                                                            £¬Ôò³ö´í
+   42 00000020                 END
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
+erwork --depend=.\objects\umathasm.d -o.\objects\umathasm.o -IE:\00_bafel\NodeB
+oard_Test\A_shoulder_horizontal_TEST\Project\RTE -ID:\Keil5_MDK\ARM\PACK\Keil\S
+TM32F4xx_DFP\1.0.8\Device\Include -ID:\Keil5_MDK\ARM\CMSIS\Include --predefine=
+"__UVISION_VERSION SETA 518" --predefine="STM32F40_41xxx SETA 1" --list=.\listi
+ngs\umathasm.lst ..\Tool\UmathASM.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 7 in file ..\Tool\UmathASM.s
+   Uses
+      None
+Comment: .text unused
+UM_IQ15MulQ15 00000000
+
+Symbol: UM_IQ15MulQ15
+   Definitions
+      At line 30 in file ..\Tool\UmathASM.s
+   Uses
+      At line 3 in file ..\Tool\UmathASM.s
+Comment: UM_IQ15MulQ15 used once
+UM_IQ15MulQ7 00000010
+
+Symbol: UM_IQ15MulQ7
+   Definitions
+      At line 36 in file ..\Tool\UmathASM.s
+   Uses
+      At line 4 in file ..\Tool\UmathASM.s
+Comment: UM_IQ15MulQ7 used once
+3 symbols
+336 symbols in table

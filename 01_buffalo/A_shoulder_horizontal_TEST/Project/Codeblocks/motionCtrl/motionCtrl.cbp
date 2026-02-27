@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="motionCtrl" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/motionCtrl" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/motionCtrl" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="../../../Appllication/Communication/communication.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Appllication/Communication/communication.h" />
+		<Unit filename="../../../Appllication/Epos4Servo/read_write_SDO.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Appllication/Epos4Servo/read_write_SDO.h" />
+		<Unit filename="../../../Appllication/Epos4Servo/servo_Control.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Appllication/Epos4Servo/servo_Control.h" />
+		<Unit filename="../../../Appllication/ForceSensor/AD7606.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Appllication/ForceSensor/AD7606.h" />
+		<Unit filename="../../../Appllication/ForceSensor/ThreeAxisForceTransform.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Appllication/ForceSensor/ThreeAxisForceTransform.h" />
+		<Unit filename="../../../Appllication/JointBoardControl/JointControl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Appllication/JointBoardControl/JointControl.h" />
+		<Unit filename="../../../CANopen301/driver/CANopenMaster.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../CANopen301/driver/CANopenMaster.h" />
+		<Unit filename="../../../CANopen301/driver/OD_CallbackProcess.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../CANopen301/driver/OD_CallbackProcess.h" />
+		<Unit filename="../../../CANopen301/driver/TestSlave.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../CANopen301/driver/TestSlave.h" />
+		<Unit filename="../../../CANopen301/driver/delete/TestMaster.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../CANopen301/driver/delete/TestMaster.h" />
+		<Unit filename="../../../CANopen301/inc/CANopenObjConfig.h" />
+		<Unit filename="../../../CANopen301/inc/OD_Config.h" />
+		<Unit filename="../../../CANopen301/inc/ObjDict.h" />
+		<Unit filename="../../../CANopen301/inc/ObjectDictionary.h" />
+		<Unit filename="../../../CANopen301/inc/can.h" />
+		<Unit filename="../../../CANopen301/inc/can_driver.h" />
+		<Unit filename="../../../CANopen301/inc/data.h" />
+		<Unit filename="../../../CANopen301/inc/dcf.h" />
+		<Unit filename="../../../CANopen301/inc/def.h" />
+		<Unit filename="../../../CANopen301/inc/emcy.h" />
+		<Unit filename="../../../CANopen301/inc/lifegrd.h" />
+		<Unit filename="../../../CANopen301/inc/lss.h" />
+		<Unit filename="../../../CANopen301/inc/mbcrc.h" />
+		<Unit filename="../../../CANopen301/inc/nmtMaster.h" />
+		<Unit filename="../../../CANopen301/inc/nmtSlave.h" />
+		<Unit filename="../../../CANopen301/inc/objacces.h" />
+		<Unit filename="../../../CANopen301/inc/objdictdef.h" />
+		<Unit filename="../../../CANopen301/inc/pdo.h" />
+		<Unit filename="../../../CANopen301/inc/sdo.h" />
+		<Unit filename="../../../CANopen301/inc/states.h" />
+		<Unit filename="../../../CANopen301/inc/stm32/applicfg.h" />
+		<Unit filename="../../../CANopen301/inc/stm32/canfestival.h" />
+		<Unit filename="../../../CANopen301/inc/stm32/config.h" />
+		<Unit filename="../../../CANopen301/inc/stm32/timerscfg.h" />
+		<Unit filename="../../../CANopen301/inc/stm32f2xx_it.h" />
+		<Unit filename="../../../CANopen301/inc/sync.h" />
+		<Unit filename="../../../CANopen301/inc/sysdep.h" />
+		<Unit filename="../../../CANopen301/inc/timer.h" />
+		<Unit filename="../../../CANopen301/inc/timers_driver.h" />
+		<Unit filename="../../../CANopen301/src/CanopenInit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../CANopen301/src/ObjectDictionary.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../CANopen301/src/can.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../CANopen301/src/dcf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../CANopen301/src/emcy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../CANopen301/src/lifegrd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../CANopen301/src/lss.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../CANopen301/src/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../CANopen301/src/nmtMaster.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../CANopen301/src/nmtSlave.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../CANopen301/src/objacces.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../CANopen301/src/pdo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../CANopen301/src/sdo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../CANopen301/src/sdocopy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../CANopen301/src/states.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../CANopen301/src/stm32f2xx_it.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../CANopen301/src/symbols.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../CANopen301/src/sync.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../CANopen301/src/timer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../CANopen301/src/timers_unix.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../MotionControl/MC_PIDPosition.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../MotionControl/MC_PIDPosition.h" />
+		<Unit filename="../../../MotionControl/MC_PIDVelocity.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../MotionControl/MC_PIDVelocity.h" />
+		<Unit filename="../../../MotionControl/MC_PositionTime.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../MotionControl/MC_PositionTime.h" />
+		<Unit filename="../../../MotionControl/MC_PositionVelocityTime.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../MotionControl/MC_PositionVelocityTime.h" />
+		<Unit filename="../../../MotionControl/MC_ProfilePosition.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../MotionControl/MC_ProfilePosition.h" />
+		<Unit filename="../../../MotionControl/MC_ProfileTorque.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../MotionControl/MC_ProfileTorque.h" />
+		<Unit filename="../../../MotionControl/MC_ProfileVelocity.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../MotionControl/MC_ProfileVelocity.h" />
+		<Unit filename="../../../MotionControl/MC_Top.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../MotionControl/MC_Top.h" />
+		<Unit filename="../../../MotionControl/MC_TrqPrfl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../MotionControl/mcProfileTorque.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../MotionControl/mcProfileTorque.h" />
+		<Unit filename="../../../MotionControl/servo_driver_control.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../MotionControl/servo_driver_control.h" />
+		<Unit filename="../../../Tool/BitBand.h" />
+		<Unit filename="../../../Tool/Delay_Systick.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Tool/Delay_Systick.h" />
+		<Unit filename="../../../Tool/PID_Regulator.h" />
+		<Unit filename="../../../Tool/Segger_Jscope/SEGGER_RTT.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Tool/Segger_Jscope/SEGGER_RTT.h" />
+		<Unit filename="../../../Tool/Segger_Jscope/SEGGER_RTT_Conf.h" />
+		<Unit filename="../../../Tool/Segger_Jscope/SEGGER_RTT_Syscalls_KEIL.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Tool/Segger_Jscope/SEGGER_RTT_printf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Tool/Umath.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Tool/Umath.h" />
+		<Unit filename="../../../Tool/UmathASM.s" />
+		<Unit filename="../../../Tool/filter.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Tool/filter.h" />
+		<Unit filename="../../../Tool/motion_queue.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Tool/motion_queue.h" />
+		<Unit filename="../../../Tool/tool.h" />
+		<Unit filename="../../Main/Board_type_config.h" />
+		<Unit filename="../../Main/global.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../Main/global.h" />
+		<Unit filename="../../Main/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../Main/stm32f4xx_it.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../Main/stm32f4xx_it.h" />
+		<Unit filename="../../Objects/boardhal.d" />
+		<Unit filename="../../Objects/can.d" />
+		<Unit filename="../../Objects/canopeninit.d" />
+		<Unit filename="../../Objects/canopenmaster.d" />
+		<Unit filename="../../Objects/chiphal_buzzer.d" />
+		<Unit filename="../../Objects/chiphal_can.d" />
+		<Unit filename="../../Objects/chiphal_delay.d" />
+		<Unit filename="../../Objects/chiphal_gpio.d" />
+		<Unit filename="../../Objects/chiphal_iwdg.d" />
+		<Unit filename="../../Objects/chiphal_spi.d" />
+		<Unit filename="../../Objects/chiphal_tim.d" />
+		<Unit filename="../../Objects/chiphal_usart.d" />
+		<Unit filename="../../Objects/communication.d" />
+		<Unit filename="../../Objects/emcy.d" />
+		<Unit filename="../../Objects/global.d" />
+		<Unit filename="../../Objects/hardware_debug.d" />
+		<Unit filename="../../Objects/jointcontrol.d" />
+		<Unit filename="../../Objects/lifegrd.d" />
+		<Unit filename="../../Objects/logic_debug.d" />
+		<Unit filename="../../Objects/main.d" />
+		<Unit filename="../../Objects/mc_positionvelocitytime.d" />
+		<Unit filename="../../Objects/motion_queue.d" />
+		<Unit filename="../../Objects/nmtmaster.d" />
+		<Unit filename="../../Objects/nmtslave.d" />
+		<Unit filename="../../Objects/objacces.d" />
+		<Unit filename="../../Objects/objectdictionary.d" />
+		<Unit filename="../../Objects/od_callbackprocess.d" />
+		<Unit filename="../../Objects/pdo.d" />
+		<Unit filename="../../Objects/read_write_sdo.d" />
+		<Unit filename="../../Objects/sdo.d" />
+		<Unit filename="../../Objects/segger_rtt.d" />
+		<Unit filename="../../Objects/segger_rtt_printf.d" />
+		<Unit filename="../../Objects/servo_control.d" />
+		<Unit filename="../../Objects/servo_driver_control.d" />
+		<Unit filename="../../Objects/st_getid.d" />
+		<Unit filename="../../Objects/startup_stm32f40_41xxx.d" />
+		<Unit filename="../../Objects/states.d" />
+		<Unit filename="../../Objects/stm32f4xx_it.d" />
+		<Unit filename="../../Objects/sync.d" />
+		<Unit filename="../../Objects/testslave.d" />
+		<Unit filename="../../Objects/threeaxisforcetransform.d" />
+		<Unit filename="../../Objects/timer.d" />
+		<Unit filename="../../Objects/umath.d" />
+		<Unit filename="../../Objects/umathasm.d" />
+		<Unit filename="../../boardHAL/inc/boardHAL.h" />
+		<Unit filename="../../boardHAL/src/boardHAL.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../boardHAL/src/boardHAL_backup.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../chipHAL/inc/chipHAL_CAN.h" />
+		<Unit filename="../../chipHAL/inc/chipHAL_GPIO.h" />
+		<Unit filename="../../chipHAL/inc/chipHAL_IWDG.h" />
+		<Unit filename="../../chipHAL/inc/chipHAL_SPI.h" />
+		<Unit filename="../../chipHAL/inc/chipHAL_TIM.h" />
+		<Unit filename="../../chipHAL/inc/chipHAL_USART.h" />
+		<Unit filename="../../chipHAL/inc/chipHAL_buzzer.h" />
+		<Unit filename="../../chipHAL/inc/chipHAL_delay.h" />
+		<Unit filename="../../chipHAL/src/chipHAL_CAN.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../chipHAL/src/chipHAL_GPIO.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../chipHAL/src/chipHAL_IWDG.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../chipHAL/src/chipHAL_SPI.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../chipHAL/src/chipHAL_TIM.C">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../chipHAL/src/chipHAL_USART.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../chipHAL/src/chipHAL_buzzer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../chipHAL/src/chipHAL_delay.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../debug/inc/hardware_debug.h" />
+		<Unit filename="../../debug/inc/logic_debug.h" />
+		<Unit filename="../../debug/src/hardware_debug.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../debug/src/logic_debug.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../param_config/equipment_param.h" />
+		<Unit filename="../../param_config/motor_param_EC60.h" />
+		<Unit filename="../../param_config/robot_leg_param.h" />
+		<Unit filename="../../signalTransform/inc/ST_AbsEncoder.h" />
+		<Unit filename="../../signalTransform/inc/ST_getId.h" />
+		<Unit filename="../../signalTransform/src/ST_AbsEncoder.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../signalTransform/src/ST_getId.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/TASKING/cstart_thumb2.asm" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/TrueSTUDIO/startup_stm32f401xx.s" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/TrueSTUDIO/startup_stm32f40_41xxx.s" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/TrueSTUDIO/startup_stm32f40xx.s" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/TrueSTUDIO/startup_stm32f411xe.s" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/TrueSTUDIO/startup_stm32f427_437xx.s" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/TrueSTUDIO/startup_stm32f427xx.s" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/TrueSTUDIO/startup_stm32f429_439xx.s" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/TrueSTUDIO/startup_stm32f446xx.s" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/arm/startup_stm32f401xx.s" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/arm/startup_stm32f40_41xxx.s" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/arm/startup_stm32f40xx.s" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/arm/startup_stm32f411xe.s" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/arm/startup_stm32f427_437xx.s" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/arm/startup_stm32f427x.s" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/arm/startup_stm32f429_439xx.s" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/arm/startup_stm32f446xx.s" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc_ride7/startup_stm32f401xx.s" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc_ride7/startup_stm32f40_41xxx.s" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc_ride7/startup_stm32f40xx.s" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc_ride7/startup_stm32f427_437xx.s" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc_ride7/startup_stm32f427x.s" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc_ride7/startup_stm32f429_439xx.s" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/iar/startup_stm32f401xx.s" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/iar/startup_stm32f40_41xxx.s" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/iar/startup_stm32f40xx.s" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/iar/startup_stm32f411xe.s" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/iar/startup_stm32f427_437xx.s" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/iar/startup_stm32f427x.s" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/iar/startup_stm32f429_439xx.s" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/iar/startup_stm32f446xx.s" />
+		<Unit filename="../../stm_lib/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/CMSIS/Include/arm_common_tables.h" />
+		<Unit filename="../../stm_lib/CMSIS/Include/arm_const_structs.h" />
+		<Unit filename="../../stm_lib/CMSIS/Include/arm_math.h" />
+		<Unit filename="../../stm_lib/CMSIS/Include/core_cm0.h" />
+		<Unit filename="../../stm_lib/CMSIS/Include/core_cm0plus.h" />
+		<Unit filename="../../stm_lib/CMSIS/Include/core_cm3.h" />
+		<Unit filename="../../stm_lib/CMSIS/Include/core_cm4.h" />
+		<Unit filename="../../stm_lib/CMSIS/Include/core_cm7.h" />
+		<Unit filename="../../stm_lib/CMSIS/Include/core_cmFunc.h" />
+		<Unit filename="../../stm_lib/CMSIS/Include/core_cmInstr.h" />
+		<Unit filename="../../stm_lib/CMSIS/Include/core_cmSimd.h" />
+		<Unit filename="../../stm_lib/CMSIS/Include/core_sc000.h" />
+		<Unit filename="../../stm_lib/CMSIS/Include/core_sc300.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/misc.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_can.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_cec.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_crc.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_cryp.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_dac.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_dbgmcu.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_dcmi.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_dma.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_dma2d.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_exti.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash_ramfunc.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_fmc.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_fmpi2c.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_fsmc.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_hash.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_i2c.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_iwdg.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_ltdc.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_qspi.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rng.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rtc.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_sai.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_sdio.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_spdifrx.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_spi.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_tim.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_usart.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_wwdg.h" />
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/misc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_adc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_can.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_crc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_aes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_des.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_tdes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dac.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dbgmcu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dcmi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma2d.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_flash.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_flash_ramfunc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fmc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fmpi2c.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fsmc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash_md5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash_sha1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_i2c.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_iwdg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_ltdc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_pwr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_qspi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rng.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_sai.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_sdio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spdifrx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_wwdg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../stm_lib/stm32f4xx_conf.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,196 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.18.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 123 845619656@qq.com, 123, LIC=14HV2-97S0W-455T5-G6F1H-N60JG-K0Q7E
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.18
+Toolchain Path:  D:\Keil5_MDK\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.18
+Dialog DLL:      DCM.DLL V1.13.6.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.14.8.0
+ 
+<h2>Project:</h2>
+E:\00_bafel\Dual_CAN_Test\Projects\MDK-ARM\atk_f407.uvprojx
+Project File Date:  07/03/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'D:\Keil5_MDK\ARM\ARMCC\Bin'
+Rebuild target 'CAN'
+assembling startup_stm32f407xx.s...
+compiling delay.c...
+compiling sys.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling system_stm32f4xx.c...
+compiling usart.c...
+compiling main.c...
+compiling stm32f4xx_hal_usart.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_it.c...
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_uart.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_sram.c...
+compiling dcf.c...
+compiling emcy.c...
+compiling lifegrd.c...
+compiling led.c...
+compiling lss.c...
+compiling nmtMaster.c...
+compiling nmtSlave.c...
+compiling stm32f4xx_hal_can.c...
+compiling objacces.c...
+compiling key.c...
+compiling pdo.c...
+compiling states.c...
+compiling sdo.c...
+compiling sync.c...
+compiling timer.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling canfestival_timer.c...
+..\..\canfestival\hardware\canfestival_timer.h(3): error:  #5: cannot open source input file "sys.h": No such file or directory
+  #include "sys.h"
+..\..\canfestival\hardware\canfestival_timer.c: 0 warnings, 1 error
+compiling stm32f4xx_hal_tim_ex.c...
+compiling stm32f4xx_hal_dma.c...
+compiling can.c...
+..\..\Drivers\BSP\CAN\can.c(120): warning:  #223-D: function "CAN_RX_GPIO_CLK_ENABLE" declared implicitly
+          CAN_RX_GPIO_CLK_ENABLE();       /* CAN_RX??时??使?? */
+..\..\Drivers\BSP\CAN\can.c(121): warning:  #223-D: function "CAN_TX_GPIO_CLK_ENABLE" declared implicitly
+          CAN_TX_GPIO_CLK_ENABLE();       /* CAN_TX??时??使?? */
+..\..\Drivers\BSP\CAN\can.c(126): error:  #20: identifier "CAN_TX_GPIO_PIN" is undefined
+          gpio_init_struct.Pin = CAN_TX_GPIO_PIN;
+..\..\Drivers\BSP\CAN\can.c(131): error:  #20: identifier "CAN_TX_GPIO_PORT" is undefined
+          HAL_GPIO_Init(CAN_TX_GPIO_PORT, &gpio_init_struct); /* CAN_TX?? 模式???? */
+..\..\Drivers\BSP\CAN\can.c(133): error:  #20: identifier "CAN_RX_GPIO_PIN" is undefined
+          gpio_init_struct.Pin = CAN_RX_GPIO_PIN;
+..\..\Drivers\BSP\CAN\can.c(134): error:  #20: identifier "CAN_RX_GPIO_PORT" is undefined
+          HAL_GPIO_Init(CAN_RX_GPIO_PORT, &gpio_init_struct); /* CAN_RX?? ???????贸?????模式 */
+..\..\Drivers\BSP\CAN\can.c: 2 warnings, 4 errors
+compiling stm32f4xx_ll_fsmc.c...
+compiling usmart.c...
+compiling usmart_config.c...
+compiling usmart_port.c...
+compiling usmart_str.c...
+compiling lcd.c...
+compiling stm32f4xx_hal_tim.c...
+compiling canfestival_can.c...
+..\..\canfestival\hardware\canfestival_can.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\canfestival\hardware\canfestival_can.c(28): warning:  #223-D: function "GPIO_Init" declared implicitly
+    GPIO_Init(GPIOD, &GPIO_Initure);               //鍒?濮?鍖?
+..\..\canfestival\hardware\canfestival_can.c(32): warning:  #223-D: function "CAN_TX_GPIO_CLK_ENABLE" declared implicitly
+     CAN_TX_GPIO_CLK_ENABLE();
+..\..\canfestival\hardware\canfestival_can.c(33): warning:  #223-D: function "CAN_RX_GPIO_CLK_ENABLE" declared implicitly
+     CAN_RX_GPIO_CLK_ENABLE();
+..\..\canfestival\hardware\canfestival_can.c(36): error:  #20: identifier "CAN1_TX_GPIO_PIN" is undefined
+     GPIO_InitStructure.Pin = CAN1_TX_GPIO_PIN;
+..\..\canfestival\hardware\canfestival_can.c(41): error:  #20: identifier "CAN1_TX_GPIO_PORT" is undefined
+     HAL_GPIO_Init(CAN1_TX_GPIO_PORT, &GPIO_InitStructure);
+..\..\canfestival\hardware\canfestival_can.c(44): error:  #20: identifier "CAN1_RX_PIN" is undefined
+     GPIO_InitStructure.Pin = CAN1_RX_PIN ;
+..\..\canfestival\hardware\canfestival_can.c(45): error:  #20: identifier "CAN1_RX_GPIO_PORT" is undefined
+     HAL_GPIO_Init(CAN1_RX_GPIO_PORT, &GPIO_InitStructure);
+..\..\canfestival\hardware\canfestival_can.c(54): error:  #20: identifier "NVIC_InitTypeDef" is undefined
+  	NVIC_InitTypeDef NVIC_InitStructure;
+..\..\canfestival\hardware\canfestival_can.c(63): warning:  #223-D: function "NVIC_Init" declared implicitly
+  	NVIC_Init(&NVIC_InitStructure);
+..\..\canfestival\hardware\canfestival_can.c(88): warning:  #223-D: function "Error_Handler" declared implicitly
+      Error_Handler();
+..\..\canfestival\hardware\canfestival_can.c(107): error:  #20: identifier "CAN_FilterInitTypeDef" is undefined
+  	CAN_FilterInitTypeDef CAN_FilterInitStructure;
+..\..\canfestival\hardware\canfestival_can.c(111): error:  #20: identifier "CAN_FilterMode_IdMask" is undefined
+  	CAN_FilterInitStructure.CAN_FilterMode = CAN_FilterMode_IdMask;		/* 灞?钄?妯?寮? */
+..\..\canfestival\hardware\canfestival_can.c(112): error:  #20: identifier "CAN_FilterScale_32bit" is undefined
+  	CAN_FilterInitStructure.CAN_FilterScale = CAN_FilterScale_32bit;	/* 32浣?妯?寮? */
+..\..\canfestival\hardware\canfestival_can.c(117): error:  #20: identifier "CAN_Filter_FIFO0" is undefined
+  	CAN_FilterInitStructure.CAN_FilterFIFOAssignment = CAN_Filter_FIFO0;	/* 杩?婊?鍣?鍏?鑱?鍒?FIFO0 */
+..\..\canfestival\hardware\canfestival_can.c(119): warning:  #223-D: function "CAN_FilterInit" declared implicitly
+  	CAN_FilterInit(&CAN_FilterInitStructure);
+..\..\canfestival\hardware\canfestival_can.c(137): warning:  #223-D: function "RCC_APB1PeriphClockCmd" declared implicitly
+  	RCC_APB1PeriphClockCmd(RCC_APB1Periph_CAN1, ENABLE);
+..\..\canfestival\hardware\canfestival_can.c(137): error:  #20: identifier "RCC_APB1Periph_CAN1" is undefined
+  	RCC_APB1PeriphClockCmd(RCC_APB1Periph_CAN1, ENABLE);
+..\..\canfestival\hardware\canfestival_can.c(140): warning:  #223-D: function "CAN_DeInit" declared implicitly
+  	CAN_DeInit(CAN1);
+..\..\canfestival\hardware\canfestival_can.c(143): warning:  #223-D: function "CAN_StructInit" declared implicitly
+  	CAN_StructInit(&CAN_InitStructure);
+..\..\canfestival\hardware\canfestival_can.c(146): error:  #136: struct "<unnamed>" has no field "CAN_TTCM"
+  	CAN_InitStructure.CAN_TTCM = DISABLE;
+..\..\canfestival\hardware\canfestival_can.c(148): error:  #136: struct "<unnamed>" has no field "CAN_ABOM"
+  	CAN_InitStructure.CAN_ABOM = ENABLE;
+..\..\canfestival\hardware\canfestival_can.c(150): error:  #136: struct "<unnamed>" has no field "CAN_AWUM"
+  	CAN_InitStructure.CAN_AWUM = ENABLE;
+..\..\canfestival\hardware\canfestival_can.c(152): error:  #136: struct "<unnamed>" has no field "CAN_NART"
+  	CAN_InitStructure.CAN_NART = DISABLE;
+..\..\canfestival\hardware\canfestival_can.c(154): error:  #136: struct "<unnamed>" has no field "CAN_RFLM"
+  	CAN_InitStructure.CAN_RFLM = DISABLE;
+..\..\canfestival\hardware\canfestival_can.c(156): error:  #136: struct "<unnamed>" has no field "CAN_TXFP"
+  	CAN_InitStructure.CAN_TXFP = DISABLE;
+..\..\canfestival\hardware\canfestival_can.c(158): error:  #136: struct "<unnamed>" has no field "CAN_Mode"
+  	CAN_InitStructure.CAN_Mode = CAN_Mode_Normal;
+..\..\canfestival\hardware\canfestival_can.c(158): error:  #20: identifier "CAN_Mode_Normal" is undefined
+  	CAN_InitStructure.CAN_Mode = CAN_Mode_Normal;
+..\..\canfestival\hardware\canfestival_can.c(161): error:  #136: struct "<unnamed>" has no field "CAN_SJW"
+  	CAN_InitStructure.CAN_SJW = CAN_SJW_1tq;
+..\..\canfestival\hardware\canfestival_can.c(161): error:  #20: identifier "CAN_SJW_1tq" is undefined
+  	CAN_InitStructure.CAN_SJW = CAN_SJW_1tq;
+..\..\canfestival\hardware\canfestival_can.c(162): error:  #136: struct "<unnamed>" has no field "CAN_BS1"
+  	CAN_InitStructure.CAN_BS1 = CAN_BS1_2tq;
+..\..\canfestival\hardware\canfestival_can.c(162): error:  #20: identifier "CAN_BS1_2tq" is undefined
+  	CAN_InitStructure.CAN_BS1 = CAN_BS1_2tq;
+..\..\canfestival\hardware\canfestival_can.c(163): error:  #136: struct "<unnamed>" has no field "CAN_BS2"
+  	CAN_InitStructure.CAN_BS2 = CAN_BS2_1tq;
+..\..\canfestival\hardware\canfestival_can.c(163): error:  #20: identifier "CAN_BS2_1tq" is undefined
+  	CAN_InitStructure.CAN_BS2 = CAN_BS2_1tq;
+..\..\canfestival\hardware\canfestival_can.c(164): error:  #136: struct "<unnamed>" has no field "CAN_Prescaler"
+  	CAN_InitStructure.CAN_Prescaler = 9;
+..\..\canfestival\hardware\canfestival_can.c(167): warning:  #223-D: function "CAN_Init" declared implicitly
+  	CAN_Init(CAN1, &CAN_InitStructure);
+..\..\canfestival\hardware\canfestival_can.c(173): warning:  #223-D: function "CAN_ITConfig" declared implicitly
+  	CAN_ITConfig(CAN1, CAN_IT_FMP0, ENABLE);
+..\..\canfestival\hardware\canfestival_can.c(173): error:  #20: identifier "CAN_IT_FMP0" is undefined
+  	CAN_ITConfig(
+AN1, CAN_IT_FMP0, ENABLE);
+..\..\canfestival\hardware\canfestival_can.c(179): error:  #20: identifier "CanRxMsg" is undefined
+  	CanRxMsg message;
+..\..\canfestival\hardware\canfestival_can.c(183): warning:  #223-D: function "CAN_Receive" declared implicitly
+  	CAN_Receive(CAN1, CAN_FIFO0, &message);
+..\..\canfestival\hardware\canfestival_can.c(183): error:  #20: identifier "CAN_FIFO0" is undefined
+  	CAN_Receive(
+AN1, CAN_FIFO0, &message);
+..\..\canfestival\hardware\canfestival_can.c(204): error:  #20: identifier "CanTxMsg" is undefined
+  	CanTxMsg TxMessage;
+..\..\canfestival\hardware\canfestival_can.c(215): warning:  #223-D: function "CAN_Transmit" declared implicitly
+  	TransmitMailbox = CAN_Transmit(CAN1, &TxMessage);
+..\..\canfestival\hardware\canfestival_can.c(217): warning:  #223-D: function "CAN_TransmitStatus" declared implicitly
+  	while((CAN_TransmitStatus(CAN1, TransmitMailbox) != CANTXOK) && --i);
+..\..\canfestival\hardware\canfestival_can.c(217): error:  #20: identifier "CANTXOK" is undefined
+  	while((CAN_TransmitStatus(
+AN1, TransmitMailbox) != CANTXOK) && --i);
+..\..\canfestival\hardware\canfestival_can.c: 16 warnings, 30 errors
+"..\..\Output\atk_f407.axf" - 35 Error(s), 17 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  E:\00_bafel\Dual_CAN_Test\Projects\MDK-ARM\RTE
+  D:\Keil5_MDK\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:30
+</pre>
+</body>
+</html>

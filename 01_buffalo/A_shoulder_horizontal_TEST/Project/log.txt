@@ -1,0 +1,14 @@
+对比8月16日程序
+1、修改proceedSDO中固定调用CAN1硬件端口的问题，改为d->canHandle。
+2、修改CAN_PORT类型为 CAN_TypeDef*。
+3、修改getElapsedTime函数中TIM_GetCounter(d->can_timer_handle)。
+4、ODdataInit函数分为CANopenSlaveODdataInit和CANopenMasterODdataInit两个。
+在CANopenMaster_initialisation中增加对CANopenMasterODdataInit的条件编译的调用。
+
+8月20
+1、在PDO发送中增加阻塞代码
+while(!((d->canHandle->TSR & 0x10000000)|(d->canHandle->TSR & 0x08000000)|(d->canHandle->TSR & 0x04000000)))
+// 避免邮箱占满，阻塞发送，实现方式不好，当PDO数量大的时候程序会等到所有PDO都从硬件发送完成后才能结束while执行后面的指令。
+// 当CAN总线故障时会造成程序堵塞在中断服务程序中，造成主程序和比该中断服务程序优先级低的程序卡死。		
+//后续修改为队列缓冲。
+

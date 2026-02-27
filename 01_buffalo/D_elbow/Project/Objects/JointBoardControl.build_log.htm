@@ -1,0 +1,268 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.18.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 123 845619656@qq.com, 123, LIC=14HV2-97S0W-455T5-G6F1H-N60JG-K0Q7E
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.18
+Toolchain Path:  D:\Keil5_MDK\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.18
+Dialog DLL:      DCM.DLL V1.13.6.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.14.8.0
+ 
+<h2>Project:</h2>
+E:\00_bafel\NodeBoard_Test\D_elbow\Project\JointBoardControl.uvprojx
+Project File Date:  05/10/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'D:\Keil5_MDK\ARM\ARMCC\Bin'
+Rebuild target 'JointBoardControl'
+compiling global.c...
+compiling HandSwitch.c...
+compiling AngleSensor.c...
+..\Appllication\AngleSensor\AngleSensor.c(13): warning:  #1295-D: Deprecated declaration TDKAngleSensor_CS_Init - give arg types
+  void TDKAngleSensor_CS_Init();
+..\Appllication\AngleSensor\AngleSensor.c(266): warning:  #550-D: variable "i32AngleTemp" was set but never used
+      int32_t i32AngleTemp = 0;
+..\Appllication\AngleSensor\AngleSensor.c(270): warning:  #177-D: variable "i64TempData" was declared but never referenced
+      int64_t i64TempData = 0;
+..\Appllication\AngleSensor\AngleSensor.c: 5 warnings, 0 errors
+compiling CanopenInit.c...
+compiling BreakControl.c...
+compiling OD_CallbackProcess.c...
+compiling servo_Control.c...
+..\Appllication\Epos4Servo\servo_Control.c(467): warning:  #940-D: missing return statement at end of non-void function "ClearServoFault"
+  }
+..\Appllication\Epos4Servo\servo_Control.c: 1 warning, 0 errors
+compiling ThreeAxisForceTransform.c...
+..\Appllication\ForceSensor\ThreeAxisForceTransform.c(65): warning:  #177-D: variable "dAngleTemp" was declared but never referenced
+      double dAngleTemp = 0.0;
+..\Appllication\ForceSensor\ThreeAxisForceTransform.c: 1 warning, 0 errors
+compiling stm32f4xx_it.c...
+compiling main.c...
+Main\main.c(80): warning:  #111-D: statement is unreachable
+  	return 0;
+Main\main.c: 1 warning, 0 errors
+compiling read_write_SDO.c...
+..\Appllication\Epos4Servo\read_write_SDO.c(35): warning:  #177-D: variable "nowline" was declared but never referenced
+      UNS8  nowline = 0;	
+..\Appllication\Epos4Servo\read_write_SDO.c(36): warning:  #177-D: variable "result" was declared but never referenced
+  	UNS8  result=0;	
+..\Appllication\Epos4Servo\read_write_SDO.c(37): warning:  #177-D: variable "abortCode" was declared but never referenced
+  	UNS32 abortCode=0;
+..\Appllication\Epos4Servo\read_write_SDO.c: 3 warnings, 0 errors
+compiling MotionPathProcess.c...
+compiling CANopenMaster.c...
+..\CANopen301\driver\CANopenMaster.c(969): warning:  #68-D: integer conversion resulted in a change of sign
+  CO_Data CANopenMaster_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( CANopenMaster, CAN_NUM2, CAN_PORT2, TIM4 );
+..\CANopen301\driver\CANopenMaster.c(969): warning:  #68-D: integer conversion resulted in a change of sign
+  CO_Data CANopenMaster_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( CANopenMaster, CAN_NUM2, CAN_PORT2, TIM4 );
+..\CANopen301\driver\CANopenMaster.c(969): warning:  #68-D: integer conversion resulted in a change of sign
+  CO_Data CANopenMaster_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( CANopenMaster, CAN_NUM2, CAN_PORT2, TIM4 );
+..\CANopen301\driver\CANopenMaster.c(969): warning:  #68-D: integer conversion resulted in a change of sign
+  CO_Data CANopenMaster_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( CANopenMaster, CAN_NUM2, CAN_PORT2, TIM4 );
+..\CANopen301\driver\CANopenMaster.c(969): warning:  #68-D: integer conversion resulted in a change of sign
+  CO_Data CANopenMaster_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( CANopenMaster, CAN_NUM2, CAN_PORT2, TIM4 );
+..\CANopen301\driver\CANopenMaster.c(969): warning:  #68-D: integer conversion resulted in a change of sign
+  CO_Data CANopenMaster_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( CANopenMaster, CAN_NUM2, CAN_PORT2, TIM4 );
+..\CANopen301\driver\CANopenMaster.c(969): warning:  #68-D: integer conversion resulted in a change of sign
+  CO_Data CANopenMaster_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( CANopenMaster, CAN_NUM2, CAN_PORT2, TIM4 );
+..\CANopen301\driver\CANopenMaster.c(969): warning:  #68-D: integer conversion resulted in a change of sign
+  CO_Data CANopenMaster_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( CANopenMaster, CAN_NUM2, CAN_PORT2, TIM4 );
+..\CANopen301\driver\CANopenMaster.c(969): warning:  #68-D: integer conversion resulted in a change of sign
+  CO_Data CANopenMaster_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( CANopenMaster, CAN_NUM2, CAN_PORT2, TIM4 );
+..\CANopen301\driver\CANopenMaster.c(969): warning:  #68-D: integer conversion resulted in a change of sign
+  CO_Data CANopenMaster_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( CANopenMaster, CAN_NUM2, CAN_PORT2, TIM4 );
+..\CANopen301\driver\CANopenMaster.c(969): warning:  #68-D: integer conversion resulted in a change of sign
+  CO_Data CANopenMaster_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( CANopenMaster, CAN_NUM2, CAN_PORT2, TIM4 );
+..\CANopen301\driver\CANopenMaster.c(969): warning:  #68-D: integer conversion resulted in a change of sign
+  CO_Data CANopenMaster_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( CANopenMaster, CAN_NUM2, CAN_PORT2, TIM4 );
+..\CANopen301\driver\CANopenMaster.c(969): warning:  #68-D: integer conversion resulted in a change of sign
+  CO_Data CANopenMaster_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( CANopenMaster, CAN_NUM2, CAN_PORT2, TIM4 );
+..\CANopen301\driver\CANopenMaster.c(969): warning:  #68-D: integer conversion resulted in a change of sign
+  CO_Data CANopenMaster_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( CANopenMaster, CAN_NUM2, CAN_PORT2, TIM4 );
+..\CANopen301\driver\CANopenMaster.c(969): warning:  #68-D: integer conversion resulted in a change of sign
+  CO_Data CANopenMaster_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( CANopenMaster, CAN_NUM2, CAN_PORT2, TIM4 );
+..\CANopen301\driver\CANopenMaster.c(969): warning:  #68-D: integer conversion resulted in a change of sign
+  CO_Data CANopenMaster_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( CANopenMaster, CAN_NUM2, CAN_PORT2, TIM4 );
+..\CANopen301\driver\CANopenMaster.c(969): warning:  #188-D: enumerated type mixed with another type
+  CO_Data CANopenMaster_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( CANopenMaster, CAN_NUM2, CAN_PORT2, TIM4 );
+..\CANopen301\driver\CANopenMaster.c: 17 warnings, 0 errors
+compiling can.c...
+..\CANopen301\inc\can_queue.h(28): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\CANopen301\src\can.c(152): warning:  #940-D: missing return statement at end of non-void function "canSend"
+  }
+..\CANopen301\src\can.c: 2 warnings, 0 errors
+compiling TestSlave.c...
+..\CANopen301\driver\TestSlave.c(1890): warning:  #68-D: integer conversion resulted in a change of sign
+  CO_Data TestSlave_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( TestSlave, CAN_NUM1, CAN_PORT1, TIM2);
+..\CANopen301\driver\TestSlave.c(1890): warning:  #68-D: integer conversion resulted in a change of sign
+  CO_Data TestSlave_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( TestSlave, CAN_NUM1, CAN_PORT1, TIM2);
+..\CANopen301\driver\TestSlave.c(1890): warning:  #68-D: integer conversion resulted in a change of sign
+  CO_Data TestSlave_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( TestSlave, CAN_NUM1, CAN_PORT1, TIM2);
+..\CANopen301\driver\TestSlave.c(1890): warning:  #68-D: integer conversion resulted in a change of sign
+  CO_Data TestSlave_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( TestSlave, CAN_NUM1, CAN_PORT1, TIM2);
+..\CANopen301\driver\TestSlave.c(1890): warning:  #68-D: integer conversion resulted in a change of sign
+  CO_Data TestSlave_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( TestSlave, CAN_NUM1, CAN_PORT1, TIM2);
+..\CANopen301\driver\TestSlave.c(1890): warning:  #68-D: integer conversion resulted in a change of sign
+  CO_Data TestSlave_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( TestSlave, CAN_NUM1, CAN_PORT1, TIM2);
+..\CANopen301\driver\TestSlave.c(1890): warning:  #68-D: integer conversion resulted in a change of sign
+  CO_Data TestSlave_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( TestSlave, CAN_NUM1, CAN_PORT1, TIM2);
+..\CANopen301\driver\TestSlave.c(1890): warning:  #68-D: integer conversion resulted in a change of sign
+  CO_Data TestSlave_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( TestSlave, CAN_NUM1, CAN_PORT1, TIM2);
+..\CANopen301\driver\TestSlave.c(1890): warning:  #68-D: integer conversion resulted in a change of sign
+  CO_Data TestSlave_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( TestSlave, CAN_NUM1, CAN_PORT1, TIM2);
+..\CANopen301\driver\TestSlave.c(1890): warning:  #68-D: integer conversion resulted in a change of sign
+  CO_Data TestSlave_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( TestSlave, CAN_NUM1, CAN_PORT1, TIM2);
+..\CANopen301\driver\TestSlave.c(1890): warning:  #68-D: integer conversion resulted in a change of sign
+  CO_Data TestSlave_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( TestSlave, CAN_NUM1, CAN_PORT1, TIM2);
+..\CANopen301\driver\TestSlave.c(1890): warning:  #68-D: integer conversion resulted in a change of sign
+  CO_Data TestSlave_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( TestSlave, CAN_NUM1, CAN_PORT1, TIM2);
+..\CANopen301\driver\TestSlave.c(1890): warning:  #68-D: integer conversion resulted in a change of sign
+  CO_Data TestSlave_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( TestSlave, CAN_NUM1, CAN_PORT1, TIM2);
+..\CANopen301\driver\TestSlave.c(1890): warning:  #68-D: integer conversion resulted in a change of sign
+  CO_Data TestSlave_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( TestSlave, CAN_NUM1, CAN_PORT1, TIM2);
+..\CANopen301\driver\TestSlave.c(1890): warning:  #68-D: integer conversion resulted in a change of sign
+  CO_Data TestSlave_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( TestSlave, CAN_NUM1, CAN_PORT1, TIM2);
+..\CANopen301\driver\TestSlave.c(1890): warning:  #68-D: integer conversion resulted in a change of sign
+  CO_Data TestSlave_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( TestSlave, CAN_NUM1, CAN_PORT1, TIM2);
+..\CANopen301\driver\TestSlave.c(1890): warning:  #188-D: enumerated type mixed with another type
+  CO_Data TestSlave_Data = 
+ANOPEN_NODE_DATA_INITIALIZER( TestSlave, CAN_NUM1, CAN_PORT1, TIM2);
+..\CANopen301\driver\TestSlave.c: 17 warnings, 0 errors
+compiling JointControl.c...
+..\Appllication\JointBoardControl\JointControl.c(1321): warning:  #550-D: variable "lfSinAlpha" was set but never used
+      double lfSinAlpha = 0.0;
+..\Appllication\JointBoardControl\JointControl.c: 1 warning, 0 errors
+compiling emcy.c...
+compiling lifegrd.c...
+compiling nmtMaster.c...
+compiling nmtSlave.c...
+compiling objacces.c...
+..\CANopen301\src\objacces.c(220): warning:  #177-D: variable "Callback" was declared but never referenced
+    ODCallback_t *Callback;
+..\CANopen301\src\objacces.c: 1 warning, 0 errors
+compiling ObjectDictionary.c...
+..\CANopen301\src\ObjectDictionary.c(66): warning:  #940-D: missing return statement at end of non-void function "find_object"
+  }
+..\CANopen301\src\ObjectDictionary.c: 1 warning, 0 errors
+compiling pdo.c...
+..\CANopen301\src\pdo.c(213): warning:  #550-D: variable "cob_id" was set but never used
+    UNS32 cob_id = 0;
+..\CANopen301\src\pdo.c(919): warning:  #177-D: variable "errorCode" was declared but never referenced
+          UNS32 errorCode;
+..\CANopen301\src\pdo.c: 2 warnings, 0 errors
+compiling states.c...
+assembling UmathASM.s...
+compiling motion_queue.c...
+compiling Umath.c...
+..\Tool\Umath.c(1369): warning:  #177-D: variable "qua" was declared but never referenced
+  	register int32_t qua,qua240,qua120;				//????
+..\Tool\Umath.c(1369): warning:  #177-D: variable "qua240" was declared but never referenced
+  	register int32_t qua,qua240,qua120;				//????
+..\Tool\Umath.c(1369): warning:  #177-D: variable "qua120" was declared but never referenced
+  	register int32_t qua,qua240,qua120;				//????
+..\Tool\Umath.c: 3 warnings, 0 errors
+compiling sync.c...
+compiling timer.c...
+assembling startup_stm32f40_41xxx.s...
+compiling can_queue.c...
+..\CANopen301\inc\can_queue.h(28): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\CANopen301\src\can_queue.c(148): warning:  #940-D: missing return statement at end of non-void function "canSendOrAndQueue"
+  }
+..\CANopen301\src\can_queue.c(213): warning:  #1-D: last line of file ends without a newline
+  //}
+..\CANopen301\src\can_queue.c: 3 warnings, 0 errors
+compiling sdo.c...
+..\CANopen301\src\sdo.c(150): warning:  #550-D: variable "nodeId" was set but never used
+  	UNS8 nodeId;
+..\CANopen301\src\sdo.c(471): warning:  #550-D: variable "nodeId" was set but never used
+      UNS8 nodeId;
+..\CANopen301\src\sdo.c(2171): warning:  #111-D: statement is unreachable
+  			return 0xFF;
+..\CANopen301\src\sdo.c: 3 warnings, 0 errors
+compiling can_data_send.c...
+..\CANopen301\inc\can_queue.h(28): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\CANopen301\src\can_data_send.c: 1 warning, 0 errors
+compiling system_stm32f4xx.c...
+compiling stm32f4xx_spi.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_rcc.c...
+compiling chipHAL_buzzer.c...
+compiling boardHAL.c...
+boardHAL\src\boardHAL.c(61): warning:  #223-D: function "chipHAL_Delay_init" declared implicitly
+      chipHAL_Delay_init(168);
+boardHAL\src\boardHAL.c(72): warning:  #223-D: function "AbsAngleSensor_Init" declared implicitly
+      AbsAngleSensor_Init();
+boardHAL\src\boardHAL.c(73): warning:  #223-D: function "delay_ms" declared implicitly
+      delay_ms(500);
+boardHAL\src\boardHAL.c: 3 warnings, 0 errors
+compiling chipHAL_GPIO.c...
+compiling chipHAL_TIM.C...
+compiling chipHAL_USART.c...
+compiling chipHAL_CAN.c...
+compiling chipHAL_IWDG.c...
+compiling chipHAL_delay.c...
+compiling ST_getId.c...
+compiling hardware_debug.c...
+compiling logic_debug.c...
+linking...
+Program Size: Code=50260 RO-data=10604 RW-data=32804 ZI-data=54484  
+FromELF: creating hex file...
+".\Objects\JointBoardControl.axf" - 0 Error(s), 63 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  E:\00_bafel\NodeBoard_Test\D_elbow\Project\RTE
+  D:\Keil5_MDK\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>

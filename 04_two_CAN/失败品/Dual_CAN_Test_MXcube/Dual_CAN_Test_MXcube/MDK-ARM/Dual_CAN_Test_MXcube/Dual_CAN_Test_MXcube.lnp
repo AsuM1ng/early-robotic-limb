@@ -1,0 +1,26 @@
+--cpu Cortex-M4.fp
+"dual_can_test_mxcube\startup_stm32f405xx.o"
+"dual_can_test_mxcube\main.o"
+"dual_can_test_mxcube\stm32f4xx_it.o"
+"dual_can_test_mxcube\stm32f4xx_hal_msp.o"
+"dual_can_test_mxcube\stm32f4xx_hal_can.o"
+"dual_can_test_mxcube\stm32f4xx_hal_rcc.o"
+"dual_can_test_mxcube\stm32f4xx_hal_rcc_ex.o"
+"dual_can_test_mxcube\stm32f4xx_hal_flash.o"
+"dual_can_test_mxcube\stm32f4xx_hal_flash_ex.o"
+"dual_can_test_mxcube\stm32f4xx_hal_flash_ramfunc.o"
+"dual_can_test_mxcube\stm32f4xx_hal_gpio.o"
+"dual_can_test_mxcube\stm32f4xx_hal_dma_ex.o"
+"dual_can_test_mxcube\stm32f4xx_hal_dma.o"
+"dual_can_test_mxcube\stm32f4xx_hal_pwr.o"
+"dual_can_test_mxcube\stm32f4xx_hal_pwr_ex.o"
+"dual_can_test_mxcube\stm32f4xx_hal_cortex.o"
+"dual_can_test_mxcube\stm32f4xx_hal.o"
+"dual_can_test_mxcube\stm32f4xx_hal_exti.o"
+"dual_can_test_mxcube\stm32f4xx_hal_tim.o"
+"dual_can_test_mxcube\stm32f4xx_hal_tim_ex.o"
+"dual_can_test_mxcube\system_stm32f4xx.o"
+--strict --scatter "Dual_CAN_Test_MXcube\Dual_CAN_Test_MXcube.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Dual_CAN_Test_MXcube.map" -o Dual_CAN_Test_MXcube\Dual_CAN_Test_MXcube.axf
